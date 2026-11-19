@@ -1,0 +1,159 @@
+<<<<<<< HEAD
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <section id="inicio" class="pantalla">
+            <h1>QUIZ GAME</h1>
+            <p>Demostrá cuánto sabés y conseguí la mayor puntuación.</p>
+            <button id="btnComenzar">Comenzar</button>
+        </section>
+
+        <section id="juego" class="pantalla oculto">
+
+            <div class="informacion">
+                <span id="numeroPregunta">Pregunta 1</span>
+                <span id="puntaje">Puntos: 0</span>
+            </div>
+
+            <h2 id="pregunta"></h2>
+
+            <div id="opciones" class="opciones"></div>
+
+            <p id="resultado"></p>
+
+            <button id="btnSiguiente" class="oculto">
+                Siguiente pregunta
+            </button>
+
+        </section>
+
+        <section id="final" class="pantalla oculto">
+            <h1>¡Juego terminado!</h1>
+            <p id="puntajeFinal"></p>
+            <button id="btnReiniciar">Volver a jugar</button>
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANANSI - El templo de los tres caminos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>ANANSI</h1>
+    <p>El templo de los tres caminos</p>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="pantalla activa">
+      <h2>Una aventura de decisiones</h2>
+      <p>Tres viajeros entran a un templo antiguo. Sus decisiones van a cambiar el destino de todos.</p>
+
+      <label for="nombreJugador">Tu nombre:</label>
+      <input id="nombreJugador" maxlength="20" placeholder="Escribí tu nombre">
+
+      <button id="comenzar">Comenzar aventura</button>
+      <button id="continuar" hidden>Continuar partida guardada</button>
+    </section>
+
+    <section id="personajes" class="pantalla">
+      <h2>Los tres viajeros</h2>
+
+      <div class="tarjetas">
+        <article>
+          <h3>Félix</h3>
+          <p>La tijera: creatividad y persuasión.</p>
+        </article>
+
+        <article>
+          <h3>Berto</h3>
+          <p>El papel: inteligencia y lógica.</p>
+        </article>
+
+        <article>
+          <h3>Roco</h3>
+          <p>La piedra: fuerza y resistencia.</p>
+        </article>
+      </div>
+
+      <button id="entrarTemplo">Entrar al templo</button>
+    </section>
+
+    <section id="juego" class="pantalla">
+      <p id="numeroSala"></p>
+      <h2 id="nombreSala"></h2>
+
+      <div class="progreso">
+        <div id="barraProgreso"></div>
+      </div>
+
+      <p id="historiaSala"></p>
+
+      <h3>Las tres puertas</h3>
+      <p>Elegí un personaje distinto para cada puerta. Leé las pistas antes de decidir.</p>
+
+      <div id="puertasContainer" class="tarjetas"></div>
+
+      <button id="confirmar" disabled>Confirmar decisiones</button>
+    </section>
+
+    <section id="resultado" class="pantalla">
+      <h2>Consecuencias</h2>
+      <p id="textoResultado"></p>
+
+      <div id="resumenResultado" class="resumen"></div>
+
+      <button id="siguienteSala">Continuar</button>
+    </section>
+
+    <section id="empate" class="pantalla">
+      <h2>El destino no puede decidir</h2>
+      <p>Hay un empate de resentimiento. Elegí quién traiciona al grupo.</p>
+
+      <div id="opcionesTraidor"></div>
+    </section>
+
+    <section id="final" class="pantalla">
+      <h2 id="tituloFinal"></h2>
+      <h3 id="subtituloFinal"></h3>
+
+      <p id="historiaFinal"></p>
+
+      <div id="estadisticasFinal" class="resumen"></div>
+
+      <button id="reiniciar">Volver a jugar</button>
+    </section>
+
+  </main>
+
+  <footer>
+    ANANSI · Cada decisión tiene consecuencias
+  </footer>
+
+  <script src="js/juego.js"></script>
+
+</body>
+</html>
+>>>>>>> 260890a (Correccion de archivos erroneos)
